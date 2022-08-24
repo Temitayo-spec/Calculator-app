@@ -1,0 +1,130 @@
+.wrapper {
+  transform: translate(-100px);
+}
+
+.inner {
+  width: 100%;
+  background: hsl(223, 31%, 20%);
+  padding: 1.5em;
+  margin: 1em 0;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.theme_two {
+  background: hsl(0, 5%, 81%);
+}
+
+.theme_three {
+  background: hsl(268, 71%, 12%);
+}
+
+.grid_four {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.grid_four button {
+  background: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  font-size: 1.5em;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 1px hsl(28, 16%, 65%);
+  padding: 0.2em;
+}
+
+.theme_two .grid_four button {
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0 3px 1px hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+.theme_three .grid_four button {
+  background: hsl(268, 47%, 21%);
+  box-shadow: 0 3px 1px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+.grid_four button:hover {
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.grid_four button:nth-child(4) {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 3px 1px hsl(224, 28%, 35%);
+  color: #fff;
+}
+
+.theme_two .grid_four button:nth-child(4) {
+  color: #fff;
+}
+
+.theme_three .grid_four button:nth-child(4) {
+  background: hsl(281, 89%, 26%);
+  box-shadow: 0 3px 1px hsl(285, 91%, 52%);
+}
+
+.grid_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin: 1em 0 0;
+}
+
+.grid_two button {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3em 1em;
+}
+
+.theme_two .grid_two button {
+  color: #fff;
+}
+
+.grid_two button:hover {
+  transform: scale(0.95);
+}
+
+.grid_two button:nth-child(1) {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 3px 1px hsl(224, 28%, 35%);
+}
+
+.theme_two .grid_two button:nth-child(1) {
+  background: hsl(185, 42%, 37%);
+  box-shadow: 0 3px 1px hsl(185, 58%, 25%);
+}
+
+.theme_two .grid_two button:nth-child(2) {
+  background: hsl(25, 98%, 40%);
+  box-shadow: 0 3px 1px hsl(25, 99%, 27%);
+}
+
+.theme_three .grid_two button:nth-child(1) {
+  background: hsl(281, 89%, 26%);
+  box-shadow: 0 3px 1px hsl(285, 91%, 52%);
+}
+
+.theme_three .grid_two button:nth-child(2) {
+  background: hsl(176, 100%, 44%);
+  box-shadow: 0 3px 1px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+.grid_two button:nth-child(2) {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0 3px 1px hsl(6, 70%, 34%);
+}
+
+.active {
+  transform: translate(0);
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
